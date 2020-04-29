@@ -1,24 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- displays site properly based on user's device -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <!--Main Style Sheet-->
+    <link rel="stylesheet" href="./style.css" />
+    <!--FontAwesome -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+      integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+      crossorigin="anonymous"
+    />
+    <title>
+      Frontend Mentor | social-media-dashboard-with-theme-switcher-master
+    </title>
+  </head>
 
-  <!--Main Style Sheet-->
-  <link rel="stylesheet" href="./style.css">
-  <!--FontAwesome -->
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
-    integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous" />
-  <title>Frontend Mentor | social-media-dashboard-with-theme-switcher-master</title>
-
-</head>
-
-<body>
-  <section id="root">
+  <body>
     <header class="header">
       <div class="header-container">
         <div class="title__header-container">
@@ -28,143 +36,248 @@
         <div class="toggle__header-container">
           <p>Dark mode</p>
           <label class="switch__header-container">
-            <input type="checkbox">
+            <input type="checkbox" />
             <span class="slider__switch round__switch"></span>
           </label>
         </div>
       </div>
     </header>
-    <main class="cards-one">
-      <div class="card-container">
-        <div class="first-card">     
-          <div class="top-border"></div>  
-          <div class="card-top">            
-            <p>
-              <i class="fab fa-facebook-square"></i>
-              @nathanf
-            </p>
+    <section id="root">
+      <main class="cards-one">
+        <div class="card-container">
+          <div class="first-card">
+            <div class="top-border"></div>
+            <div class="card-top">
+              <p class="facebook">
+                <i class="fab fa-facebook-square"></i>
+                @nathanf
+              </p>
+            </div>
+            <div class="card-middle">
+              <h3>1987</h3>
+              <p>Followers</p>
+            </div>
+            <div class="card-bottom">
+              <p>
+                <i class="fas fa-caret-up"></i>
+                12 Today
+              </p>
+            </div>
+            <div class="ghost"></div>
           </div>
-          <div class="card-middle">
-            <h3>1987</h3>
-            <p>Followers</p>
+          <div class="second-card">
+            <div class="top-border"></div>
+            <div class="card-top">
+              <p class="twitter">
+                <i class="fab fa-twitter"></i>
+                @nathanf
+              </p>
+            </div>
+            <div class="card-middle">
+              <h3>1044</h3>
+              <p>Followers</p>
+            </div>
+            <div class="card-bottom">
+              <p>
+                <i class="fas fa-caret-up"></i>
+                99 Today
+              </p>
+            </div>
+            <div class="ghost"></div>
           </div>
-          <div class="card-bottom">
-            <p>
-              <i class="fas fa-caret-up"></i>
-              12 Today
-            </p>
+          <div class="third-card">
+            <div class="top-border"></div>
+            <div class="card-top">
+              <p class="instagram">
+                <i class="fab fa-instagram icon-gradient"></i>
+                @realnathanf
+              </p>
+            </div>
+            <div class="card-middle">
+              <h3>11k</h3>
+              <p>Followers</p>
+            </div>
+            <div class="card-bottom">
+              <p class="caret-down">
+                <i class="fas fa-caret-up"></i>
+                1099 Today
+              </p>
+            </div>
+            <div class="ghost"></div>
           </div>
-          <div class="ghost"></div>
+          <div class="fourth-card">
+            <div class="top-border"></div>
+            <div class="card-top">
+              <p class="youtube">
+                <i class="fab fa-youtube"></i>
+                Nathan F.
+              </p>
+            </div>
+            <div class="card-middle">
+              <h3>8239</h3>
+              <p>Subscribers</p>
+            </div>
+            <div class="card-bottom">
+              <p>
+                <i class="fas fa-caret-down"></i>
+                144 Today
+              </p>
+            </div>
+            <div class="ghost"></div>
+          </div>
         </div>
-        <div class="second-card">
-          <div class="top-border"></div>  
-          <div class="card-top">
-            <p >
-              <i class="fab fa-twitter"></i>
-              @nathanf
-            </p>
-          </div>
-          <div class="card-middle">
-            <h3>1044</h3>
-            <p>Followers</p>
-          </div>
-          <div class="card-bottom">
-            <p>
-              <i class="fas fa-caret-up"></i>
-              99 Today
-            </p>
-          </div>
-          <div class="ghost"></div>
-        </div>
-        <div class="third-card">
-          <div class="top-border"></div>  
-          <div class="card-top">
-            <p>
-              <i class="fab fa-instagram icon-gradient"></i>
-              @realnathanf
-            </p>
-          </div>
-          <div class="card-middle">
-            <h3>11k</h3>
-            <p>Followers</p>
-          </div>
-          <div class="card-bottom">
-            <p>
-              <i class="fas fa-caret-up"></i>
-              1099 Today
-            </p>
-          </div>
-          <div class="ghost"></div>
-        </div>
-        <div class="forth-card">
-          <div class="top-border"></div>  
-          <div class="card-top">
-            <p>
-              <i class="fab fa-youtube"></i>
-              Nathan F.
-            </p>
-          </div>
-          <div class="card-middle">
-            <h3>8239</h3>
-            <p>Subscribers</p>
-          </div>
-          <div class="card-bottom">
-            <p>
-              <i class="fas fa-caret-down"></i>
-              144 Today
-            </p>
-          </div>
-          <div class="ghost"></div>
+      </main>
+
+      <div class="sub-title">
+        <div class="wrapper__sub-title">
+          <h2>Overview - Today</h2>
         </div>
       </div>
-    </main>
-    <div class="sub-title">
-      <div class="wrapper__sub-title">
-        <h2>Overview - Today</h2>
-      </div>
-    </div>
-    <main class="cards-two"></main>
 
+      <main class="cards-two">
+        <div class="card-container__cards-two">
+          <div class="row-one">
+            <!--Facebook-->
+            <div class="card-one__cards-two">
+              <div class="top__cards-two">
+                <p>Page Views</p>
+                <p class="facebook">
+                  <i class="fab fa-facebook-square"></i>
+                </p>
+              </div>
+              <div class="bottom__cards-two">
+                <h4>87</h4>
+                <p class="up-caret">
+                  <i class="fas fa-caret-up"></i>
+                  3%
+                </p>
+              </div>
+            </div>
 
+            <div class="card-two__cards-two">
+              <div class="top__cards-two">
+                <p>Likes</p>
+                <p class="facebook">
+                  <i class="fab fa-facebook-square"></i>
+                </p>
+              </div>
+              <div class="bottom__cards-two">
+                <h4>52</h4>
+                <p class="down-caret">
+                  <i class="fas fa-caret-down"></i>
+                  2%
+                </p>
+              </div>
+            </div>
 
+            <!--Instagram-->
+            <div class="card-three__cards-two">
+              <div class="top__cards-two">
+                <p>Likes</p>
+                <p class="instagram">
+                  <i class="fab fa-instagram icon-gradient"></i>
+                </p>
+              </div>
+              <div class="bottom__cards-two">
+                <h4>5462</h4>
+                <p class="up-caret">
+                  <i class="fas fa-caret-up"></i>
+                  2257%
+                </p>
+              </div>
+            </div>
 
+            <div class="card-four__cards-two">
+              <div class="top__cards-two">
+                <p>Profile Views</p>
+                <p class="instagram">
+                  <i class="fab fa-instagram icon-gradient"></i>
+                </p>
+              </div>
+              <div class="bottom__cards-two">
+                <h4>52k</h4>
+                <p class="up-caret">
+                  <i class="fas fa-caret-up"></i>
+                  1375%
+                </p>
+              </div>
+            </div>
+          </div>
 
-    Page Views
-    87
-    3%
+          <div class="row-two">
+            <!--Tweeter-->
 
-    Likes
-    52
-    2%
+            <div class="card-one__cards-two">
+              <div class="top__cards-two">
+                <p>Retweets</p>
+                <p class="twitter">
+                  <i class="fab fa-twitter"></i>
+                </p>
+              </div>
+              <div class="bottom__cards-two">
+                <h4>117</h4>
+                <p class="up-caret">
+                  <i class="fas fa-caret-up"></i>
+                  303%
+                </p>
+              </div>
+            </div>
+            <div class="card-two__cards-two">
+              <div class="top__cards-two">
+                <p>Likes</p>
+                <p class="twitter">
+                  <i class="fab fa-twitter"></i>
+                </p>
+              </div>
+              <div class="bottom__cards-two">
+                <h4>507</h4>
+                <p class="up-caret">
+                  <i class="fas fa-caret-up"></i>
+                  553%
+                </p>
+              </div>
+            </div>
 
-    Likes
-    5462
-    2257%
+            <!--YouTube-->
+            <div class="card-three__cards-two">
+              <div class="top__cards-two">
+                <p>Likes</p>
+                <p class="youtube">
+                  <i class="fab fa-youtube"></i>
+                </p>
+              </div>
+              <div class="bottom__cards-two">
+                <h4>107</h4>
+                <p class="down-caret">
+                  <i class="fas fa-caret-down"></i>
+                  19%
+                </p>
+              </div>
+            </div>
 
-    Profile Views
-    52k
-    1375%
+            <div class="card-four__cards-two">
+              <div class="top__cards-two">
+                <p>Total Views</p>
+                <p class="youtube">
+                  <i class="fab fa-youtube"></i>
+                </p>
+              </div>
+              <div class="bottom__cards-two">
+                <h4>1407</h4>
+                <p class="down-caret">
+                  <i class="fas fa-caret-down"></i>
+                  12%
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </section>
 
-    Retweets
-    117
-    303%
-
-    Likes
-    507
-    553%
-
-    Likes
-    107
-    19%
-
-    Total Views
-    1407
-    12%
-  </section>
-  <footer class="attribution">
+    <!-- <footer class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
     Coded by <a href="#">Your Name Here</a>.
-  </footer>
-</body>
-
+  </footer> -->
+  </body>
 </html>
