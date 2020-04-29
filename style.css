@@ -267,6 +267,12 @@ body {
   padding-right: 0.3em;
 }
 
+.forth-card .card-bottom p, .forth-card .card-bottom p i {
+  color: hsl(348, 67%, 46%);
+  padding-right: 0.3em;
+}
+
+
 
 /*////////////////////////////////
 //      End  Root__Card-One
