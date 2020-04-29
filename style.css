@@ -1,6 +1,6 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
 :root{
   /*Dark Theme*/
     --dark-blue-bg: hsl(230, 17%, 14%);
@@ -9,17 +9,19 @@
     --dark-cards-text: hsl(228, 34%, 66%);
     --dark-white-text-color: hsl(0, 0%, 100%);
 
-/*Light Theme*/
---light-bg: hsl(0, 0%, 100%);
---light-pale-blue-header-bg: hsl(225, 100%, 98%);
---light-cards-bg: hsl(227, 47%, 96%);
---light-cards-text: hsl(228, 12%, 44%);
---light-white-text-color: hsl(230, 17%, 14%);
+  /*Light Theme*/
+  --light-bg: hsl(0, 0%, 100%);
+  --light-pale-blue-header-bg: hsl(225, 100%, 98%);
+  --light-cards-bg: hsl(227, 47%, 96%);
+  --light-cards-text: hsl(228, 12%, 44%);
+  --light-white-text-color: hsl(230, 17%, 14%);
 }
+
 *, *::before, *::after{
     box-sizing: border-box;
     margin: 0; 
     padding: 0;
+    border: 1px solid red;
 }
 
 html,
@@ -31,8 +33,8 @@ body {
 }
 
 body {
-  font-family: 'Open Sans', sans-serif;
-  background: var(--body-bg);
+  font-family: 'Inter', sans-serif;
+  background: var(--dark-blue-bg);
   -webkit-touch-callout: none;
   -webkit-user-select: none;
   -khtml-user-select: none;
@@ -48,53 +50,68 @@ body {
   overflow-x: hidden !important;
   width: 100%;
   height: 100%;
-  padding: 2rem;
-
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
 }
 
-/* .simple-trans-main > div {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  will-change: transform, opacity;
-} */
-
-
 /*////////////////////////////////
 //    Start Root__Header
 ////////////////////////////////*/
 
 .header{
-    display:flex;
-    justify-content: space-between;
-    width: 80%; 
-    height:15%;
-    margin: 0.5rem;
+  font-family: 'Inter', sans-serif;
+  background: var(--dark-blue-header-bg); 
+  display:flex;
+  justify-content: center;
+  width: 100%; 
+  height:30%;
+  padding-top: 2rem;
+  border-radius: 0 0 1rem 1rem;
 }
 
-.title__header h1{
-    color: #ffffff;
-}
-.title__header p{
-    color: #ffffff;
+.header-container{
+  width: 70%;
+  height: 100%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
 }
 
 
-.switch__header {
+.title__header-container h1{
+  font-size: 1.4rem;
+    color: var(--dark-white-text-color);
+}
+.title__header-container p{
+  font-size: 0.8rem;
+  color: var(--dark-cards-text);
+  margin-top: 0.3rem;
+}
+
+.toggle__header-container{
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin-top: 1rem;
+  
+}
+.toggle__header-container p{
+  font-size: 0.8rem;
+  color: var(--dark-cards-text);
+  margin: 0.5rem 0.5rem;
+  
+}
+
+.switch__header-container {
     position: relative;
     display: inline-block;
-    width: 60px;
-    height: 34px;
+    width: 4rem;
+    height: 1.8rem;
   }
   
-  .switch__header input { 
+  .switch__header-container input { 
     opacity: 0;
     width: 0;
     height: 0;
@@ -107,8 +124,7 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
-    background: linear-gradient(to top left, hsl(230, 22%, 74%), hsl(0, 0%, 96%)) !important;
-
+    background: linear-gradient(to top left,  hsl(146, 68%, 55%), hsl(210, 78%, 56%)) !important;
     -webkit-transition: .4s;
     transition: .4s;
   }
@@ -116,17 +132,17 @@ body {
   .slider__switch:before {
     position: absolute;
     content: "";
-    height: 26px;
-    width: 26px;
+    height: 1.3rem;
+    width: 1.3rem;
     left: 4px;
     bottom: 4px;
-    background-color: white;
+    background-color: var(--dark-cards-bg);
     -webkit-transition: .4s;
     transition: .4s;
   }
   
   input:checked + .slider__switch {
-    background: linear-gradient(to top left, hsl(210, 78%, 56%), hsl(146, 68%, 55%)) !important;
+    background:  linear-gradient(to top left, hsl(230, 22%, 74%), hsl(0, 0%, 96%)) !important;;
   }
   
   input:focus + .slider__switch {
@@ -141,7 +157,7 @@ body {
    
   /* Rounded sliders */
   .slider__switch.round__switch {
-    border-radius: 34px;
+    border-radius: 2rem;
   }
   
   .slider__switch.round__switch:before {
@@ -150,4 +166,41 @@ body {
 
 /*////////////////////////////////
 //      END  Root__Header
+////////////////////////////////*/
+
+/*////////////////////////////////
+//      Start Root__Card-One
+////////////////////////////////*/
+
+.cards-one{
+  position: absolute;
+  top: 13%;
+  width: 100%;
+  height: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: transparent;    
+}
+
+.card-container{
+  display: flex;
+  justify-content: space-between;
+  width: 70%; 
+  height: 90%;
+  border: 1px solid gold;
+}
+
+.first-card, .second-card, .third-card, .forth-card{
+  width: 20%;
+  background-color: var(--dark-cards-bg);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+
+/*////////////////////////////////
+//      End  Root__Card-One
 ////////////////////////////////*/
