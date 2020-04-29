@@ -230,8 +230,8 @@ input:checked + .slider__switch:before {
 .third-card .top-border {
   background: linear-gradient(
     to top left,
-    hsl(37, 97%, 70%),
-    hsl(329, 70%, 58%)
+    hsl(329, 70%, 58%),
+    hsl(37, 97%, 70%)
   ) !important;
 }
 .fourth-card .top-border {
@@ -419,17 +419,6 @@ input:checked + .slider__switch:before {
   color: var(--dark-white-text-color);
   font-size: 2rem;
 }
-/* .card-bottom p i,
-.bottom__cards-two p i {
-  color: hsl(146, 68%, 55%);
-  padding-right: 0.3em;
-} */
-
-/* .fourth-card .card-bottom p,
-.fourth-card .card-bottom p i {
-  color: hsl(348, 67%, 46%);
-  padding-right: 0.3em;
-} */
 
 /*////////////////////////////////
 //     End  Root__Cards-Two
