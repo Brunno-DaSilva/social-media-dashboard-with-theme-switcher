@@ -440,3 +440,188 @@ input:checked + .slider__switch:before {
 /*////////////////////////////////
 //     End  Root__Cards-Two
 ////////////////////////////////*/
+
+/*////////////////////////////////
+//       Mobile Design
+////////////////////////////////*/
+@media screen and (max-width: 600px) {
+  /*///////////////////
+  //   Header mobile
+  ///////////////////*/
+
+  .header {
+    display: flex;
+    height: 25%;
+    flex-direction: column;
+    width: 100%;
+
+    margin-bottom: 1rem !important;
+  }
+
+  .header-container {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  .title__header-container {
+    border-bottom: 0.5px solid var(--dark-cards-text);
+  }
+
+  .title__header-container h1 {
+    font-size: 1.2rem;
+  }
+  .title__header-container p {
+    font-size: 0.7rem;
+    margin-bottom: 1rem;
+  }
+
+  .toggle__header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 1rem;
+  }
+  .toggle__header-container p {
+    font-size: 0.8rem;
+    color: var(--cards-text);
+    margin: 0.5rem 0.5rem;
+  }
+
+  .switch__header-container {
+    position: relative;
+    display: inline-block;
+    width: 3rem;
+    height: 1.4rem;
+  }
+
+  .switch__header-container input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+
+  .slider__switch:before {
+    position: absolute;
+    content: "";
+    height: 1.1rem;
+    width: 1.1rem;
+    left: 2px;
+    bottom: 2px;
+    background-color: var(--cards-bg);
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+  }
+
+  input:checked + .slider__switch:before {
+    -webkit-transform: translateX(18px);
+    -ms-transform: translateX(18px);
+    transform: translateX(18px);
+  }
+
+  /* Rounded sliders */
+  .slider__switch.round__switch {
+    border-radius: 1.4rem;
+  }
+
+  /*//////////////////////////
+  //  END - Header mobile
+  //////////////////////////*/
+
+  /*////////////////////////////////
+//      Start Root__Card-One
+////////////////////////////////*/
+
+  .cards-one {
+    position: absolute;
+    top: 19%;
+  }
+
+  .card-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 88%;
+    height: auto;
+    border: 1px solid red;
+  }
+
+  .first-card,
+  .second-card,
+  .third-card,
+  .fourth-card {
+    width: 100%;
+    margin: 1rem 0;
+  }
+
+  .third-card .top-border {
+    background: linear-gradient(
+      to top left,
+      hsl(329, 70%, 58%),
+      hsl(37, 97%, 70%)
+    ) !important;
+  }
+  .fourth-card .top-border {
+    background: hsl(348, 97%, 39%);
+  }
+
+  .card-top p {
+    font-size: 0.8rem;
+    color: var(--cards-text);
+  }
+
+  .third-card .card-top .icon-gradient,
+  .instagram .icon-gradient {
+    background: -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      from(hsl(37, 97%, 70%)),
+      to(hsl(329, 70%, 58%))
+    );
+    padding-right: 0.3em;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .fourth-card .card-top p i {
+    color: hsl(348, 97%, 39%);
+    padding-right: 0.3em;
+  }
+
+  .card-middle h3 {
+    font-size: 2.8rem;
+    text-align: center;
+  }
+  .card-middle p {
+    font-size: 0.8rem;
+    color: var(--cards-text);
+    letter-spacing: 0.2rem;
+    text-transform: uppercase;
+  }
+
+  .card-bottom p {
+    font-size: 0.8rem;
+    color: hsl(146, 68%, 55%);
+  }
+  .card-bottom p i,
+  .bottom__cards-two p i {
+    color: hsl(146, 68%, 55%);
+    padding-right: 0.3em;
+  }
+
+  .fourth-card .card-bottom p,
+  .fourth-card .card-bottom p i {
+    color: hsl(348, 67%, 46%);
+    padding-right: 0.3em;
+  }
+
+  /*////////////////////////////////
+//      End  Root__Card-One
+////////////////////////////////*/
+
+  .cards-two {
+    display: none;
+  }
+}
