@@ -616,7 +616,6 @@ input:checked + .slider__switch:before {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    border: 1px solid blue;
   }
   .card-container__cards-two {
     display: flex;
