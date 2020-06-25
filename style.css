@@ -625,7 +625,6 @@ input:checked + .slider__switch:before {
     width: 90%;
     height: 95%;
     align-items: center;
-    border: 1px solid red;
   }
   .row-one,
   .row-two {
@@ -642,35 +641,14 @@ input:checked + .slider__switch:before {
     width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    padding: 1rem;
+    justify-content: center;
+    padding: 0.5rem;
     border-radius: 0.5rem;
     margin: 1rem 0;
   }
   .top__cards-two,
   .bottom__cards-two {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  .instagram .icon-gradient {
-    font-size: 1.1rem;
-  }
-
-  .youtube i {
-    font-size: 1rem;
-  }
-  .twitter i {
-    font-size: 1.1rem;
-  }
-
-  .facebook i {
-    font-size: 1.1rem;
-  }
-
-  .bottom__cards-two h4 {
-    font-size: 1.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
 }
