@@ -544,7 +544,6 @@ input:checked + .slider__switch:before {
     justify-content: space-between;
     width: 88%;
     height: auto;
-    border: 1px solid red;
   }
 
   .first-card,
@@ -555,15 +554,16 @@ input:checked + .slider__switch:before {
     margin: 1rem 0;
   }
 
-  .third-card .top-border {
-    background: linear-gradient(
-      to top left,
-      hsl(329, 70%, 58%),
-      hsl(37, 97%, 70%)
-    ) !important;
+  .facebook,
+  .twitter,
+  .instagram,
+  .youtube,
+  .card-middle h3,
+  .card-bottom p {
+    padding: 1rem;
   }
-  .fourth-card .top-border {
-    background: hsl(348, 97%, 39%);
+
+  .card-middle p {
   }
 
   .card-top p {
@@ -571,57 +571,106 @@ input:checked + .slider__switch:before {
     color: var(--cards-text);
   }
 
-  .third-card .card-top .icon-gradient,
-  .instagram .icon-gradient {
-    background: -webkit-gradient(
-      linear,
-      left top,
-      left bottom,
-      from(hsl(37, 97%, 70%)),
-      to(hsl(329, 70%, 58%))
-    );
-    padding-right: 0.3em;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-  }
-
-  .fourth-card .card-top p i {
-    color: hsl(348, 97%, 39%);
-    padding-right: 0.3em;
-  }
-
   .card-middle h3 {
-    font-size: 2.8rem;
-    text-align: center;
+    font-size: 2rem;
   }
   .card-middle p {
-    font-size: 0.8rem;
-    color: var(--cards-text);
-    letter-spacing: 0.2rem;
-    text-transform: uppercase;
+    font-size: 0.6rem;
+    padding: 0 1rem;
   }
 
   .card-bottom p {
-    font-size: 0.8rem;
-    color: hsl(146, 68%, 55%);
-  }
-  .card-bottom p i,
-  .bottom__cards-two p i {
-    color: hsl(146, 68%, 55%);
-    padding-right: 0.3em;
-  }
-
-  .fourth-card .card-bottom p,
-  .fourth-card .card-bottom p i {
-    color: hsl(348, 67%, 46%);
-    padding-right: 0.3em;
+    font-size: 0.6rem;
   }
 
   /*////////////////////////////////
 //      End  Root__Card-One
 ////////////////////////////////*/
 
+  /*////////////////////////////////
+//      Start Root__Sub-Title
+////////////////////////////////*/
+  .sub-title {
+    top: 140%;
+    width: 100%;
+  }
+
+  .wrapper__sub-title {
+    width: 90%;
+  }
+  .wrapper__sub-title h2 {
+    font-size: 1.1rem;
+  }
+
+  /*////////////////////////////////
+//      End  Root__Sub-Title
+////////////////////////////////*/
+
+  /*////////////////////////////////
+//     Start  Root__Cards-Two
+////////////////////////////////*/
   .cards-two {
-    display: none;
+    position: absolute;
+    top: 145%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 1px solid blue;
+  }
+  .card-container__cards-two {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 90%;
+    height: 95%;
+    align-items: center;
+    border: 1px solid red;
+  }
+  .row-one,
+  .row-two {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 1rem;
+  }
+  .card-one__cards-two,
+  .card-two__cards-two,
+  .card-three__cards-two,
+  .card-four__cards-two {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    margin: 1rem 0;
+  }
+  .top__cards-two,
+  .bottom__cards-two {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .instagram .icon-gradient {
+    font-size: 1.1rem;
+  }
+
+  .youtube i {
+    font-size: 1rem;
+  }
+  .twitter i {
+    font-size: 1.1rem;
+  }
+
+  .facebook i {
+    font-size: 1.1rem;
+  }
+
+  .bottom__cards-two h4 {
+    font-size: 1.5rem;
   }
 }
